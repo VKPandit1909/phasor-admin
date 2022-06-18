@@ -13,7 +13,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
 
     <head>
         <meta charset="utf-8">
-        <title>Add Course | Phasor Academy - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>Add Testimonial | Phasor Academy - Responsive Bootstrap 5 Admin Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="The Debug Arena" name="author">
@@ -51,11 +51,11 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Phasor Academy</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Course</a></li>
-                                            <li class="breadcrumb-item active">Add Course</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Testimonials</a></li>
+                                            <li class="breadcrumb-item active">Add Testimonial</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Add Course</h4>
+                                    <h4 class="page-title">Add Testimonial</h4>
                                 </div>
                             </div>
                         </div>
@@ -68,41 +68,43 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
 
                                         <div class="row">
                                             <div class="col-xl-6">
-                                                <form action="insert_course.php" method="POST">
+                                                <form action="insert_testimonial.php" method="POST">
                                                     <input type="hidden" name="c_doc_data" id="c_doc_data">
                                                     <input type="hidden" name="c_doc_name" id="c_doc_name">
                                                     <div class="mb-3">
-                                                        <label for="course_title" class="form-label">Course Title</label>
-                                                        <input type="text" id="course_title" name="course_title" class="form-control" placeholder="Enter course name">
+                                                        <label for="fname" class="form-label">Name</label>
+                                                        <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter name">
                                                     </div>
 
                                                     <div class="mb-3">
-                                                        <label for="course_desc" class="form-label">Course Description</label>
-                                                        <textarea class="form-control" id="course_desc" name="course_desc" rows="5" placeholder="Enter some brief about course.."></textarea>
+                                                        <label for="testimonial_desc" class="form-label">Testimonial Description</label>
+                                                        <textarea class="form-control" id="testimonial_desc" name="testimonial_desc" rows="5" placeholder="Enter some brief about testimonial.."></textarea>
                                                     </div>
 
                                                     <div class="mb-3">
-                                                        <label for="course_cat" class="form-label">Category</label>
-                                                        
-                                                        <select class="form-control select2" data-toggle="select2" id="course_cat" name="course_cat">
-                                                            <option>Select Category</option>
-                                                            <option value="Engineering">Engineering</option>
-                                                            <option value="Medical">Medical</option>
+                                                        <label for="relation" class="form-label">Relation</label>
+                                                        <select class="form-control select2" data-toggle="select2" id="relation" name="relation">
+                                                            <option>Select Relation</option>
+                                                            <option value="Self">Self</option>
+                                                            <option value="Mother">Mother</option>
+                                                            <option value="Father">Father</option>
+                                                            <option value="Brother">Brother</option>
+                                                            <option value="Sister">Sister</option>
                                                         </select>
                                                     </div>
 
                                                     <div class="mb-0 d-none">
-                                                        <button type="submit" class="btn btn-primary" id="add_course" name="add_course">Add Course</button>
+                                                        <button type="submit" class="btn btn-primary" id="add_testimonial" name="add_testimonial">Add Testimonial</button>
                                                     </div>
                                                     <div class="mb-0">
-                                                        <button type="button" class="btn btn-primary" id="submit_course" name="submit_course">Add Course</button>
+                                                        <button type="button" class="btn btn-primary" id="submit_testimonial" name="submit_testimonial">Add Testimonial</button>
                                                     </div>
                                                 </form>
                                             </div> <!-- end col-->
 
                                             <div class="col-xl-6">
                                                 <div class="mb-3 mt-3 mt-xl-0">
-                                                    <label for="course_photo" class="mb-0">Avatar</label>
+                                                    <label for="course_photo" class="mb-0">Profile</label>
                                                     <!-- <p class="text-muted font-14">Recommended thumbnail size 800x400 (px).</p> -->
 
                                                     <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
@@ -185,13 +187,13 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
         <!-- end demo js-->
 
         <script>
-            $("#submit_course").click(function() {
+            $("#submit_testimonial").click(function() {
                 if($('#file-previews .avatar-sm').length > 0) {
                     var img = $('#file-previews .avatar-sm').attr('src');
                     var img_name = $('#file-previews .text-muted').html().trim();
                     $("#c_doc_data").val(img);
                     $("#c_doc_name").val(img_name);
-                    $("#add_course").click();
+                    $("#add_testimonial").click();
                 }  else {
                     alert("Please upload an image.");
                 }

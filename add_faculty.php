@@ -73,16 +73,16 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                     <input type="hidden" name="c_doc_name" id="c_doc_name">
                                                     <div class="mb-3">
                                                         <label for="faculty_name" class="form-label">Faculty Name</label>
-                                                        <input type="text" id="faculty_name" name="faculty_name" class="form-control" placeholder="Enter project name">
+                                                        <input type="text" id="faculty_name" name="faculty_name" class="form-control" placeholder="Enter faculty name">
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="faculty_desc" class="form-label">Faculty Description</label>
-                                                        <textarea class="form-control" id="faculty_desc" name="faculty_desc" rows="5" placeholder="Enter some brief about project.."></textarea>
+                                                        <textarea class="form-control" id="faculty_desc" name="faculty_desc" rows="5" placeholder="Enter some brief about faculty.."></textarea>
                                                     </div>
                                                     <div class="mb-3">
                                                         <label for="faculty_cat" class="form-label">Faculty Subject</label>
-                                                        <input type="text" id="faculty_cat" name="faculty_cat" class="form-control" placeholder="Enter project name">
+                                                        <input type="text" id="faculty_cat" name="faculty_cat" class="form-control" placeholder="Enter faculty subject">
                                                     </div>
 
                                                     <!-- <div class="mb-3">
