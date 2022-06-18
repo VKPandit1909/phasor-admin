@@ -60,16 +60,16 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
                     <i class="uil-envelope"></i>
-                    <span> Email </span>
+                    <span> Faculty </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="apps-email-inbox.html">Inbox</a>
+                            <a href="add_faculty.php">Add Faculty</a>
                         </li>
                         <li>
-                            <a href="apps-email-read.html">Read Email</a>
+                            <a href="apps-email-read.html">View Faculties</a>
                         </li>
                     </ul>
                 </div>

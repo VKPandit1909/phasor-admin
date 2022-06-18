@@ -1,11 +1,11 @@
 ﻿<?php
 
-session_start();
-if(isset($_SESSION['username']) && $_SESSION['username']!=''){
-    include "config.php";
-} else {
-    header("Location: /dashboard-admin/login.php?msg=Session expired. Please login again !!!");
-}
+// session_start();
+// if(isset($_SESSION['username']) && $_SESSION['username']!=''){
+//     include "config.php";
+// } else {
+//     header("Location: /phasor-admin/login.php?msg=Session expired. Please login again !!!");
+// }
 
 ?>
 <!DOCTYPE html>
