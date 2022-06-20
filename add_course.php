@@ -8,6 +8,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
 }
 
 ?>
+
 <!DOCTYPE html>
     <html lang="en">
 
@@ -115,6 +116,8 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                             <h4>Drop files here or click to upload.</h4>
                                                         </div>
                                                     </form>
+
+                                                   
 
                                                     <!-- Preview -->
                                                     <div class="dropzone-previews mt-3" id="file-previews"></div>
