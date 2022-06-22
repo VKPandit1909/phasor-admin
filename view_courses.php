@@ -21,6 +21,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- App css -->
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
@@ -94,7 +95,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                                 <?php echo $row['id']; ?>
                                                             </td>
                                                             <td><div class="col-auto">
-                                                                    <img data-dz-thumbnail="" src="<?php echo $row['course_photo']; ?>" class="avatar-sm rounded bg-light" alt="">
+                                                                    <img data-dz-thumbnail="" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['course_photo']); ?>" class="avatar-sm rounded bg-light" alt="">
                                                                 </div>
                                                             </td>
                                                             <td><?php echo $row['course_title']; ?></td>

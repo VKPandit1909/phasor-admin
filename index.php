@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['username']) && $_SESSION['username']!=''){
     include "config.php";
 } else {
-    header("Location: /phasor-admin/login.php?msg=Session expired. Please login again !!!");
+    header("Location: /dashboard-admin/login.php?msg=Session expired. Please login again !!!");
 }
 
 ?>
@@ -82,7 +82,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                             $query = mysqli_query($conn,$sql);
                             $row = mysqli_fetch_assoc($query);
                             ?>
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12" href="view_courses.php">
                                         <div class="card widget-flat">
                                             <div class="card-body">
                                                 <div class="float-end">
@@ -96,9 +96,9 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                 </p> -->
                                             </div> <!-- end card-body-->
                                         </div> <!-- end card-->
-                                    </div> <!-- end col-->
+                                    </a> <!-- end col-->
 
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12" href="view_faculties.php">
                                         <div class="card widget-flat">
                                             <div class="card-body">
                                                 <div class="float-end">
@@ -112,9 +112,9 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                 </p> -->
                                             </div> <!-- end card-body-->
                                         </div> <!-- end card-->
-                                    </div> <!-- end col-->
+                                    </a> <!-- end col-->
 
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12" href="view_testimonials.php">
                                         <div class="card widget-flat">
                                             <div class="card-body">
                                                 <div class="float-end">
@@ -128,9 +128,9 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                 </p> -->
                                             </div> <!-- end card-body-->
                                         </div> <!-- end card-->
-                                    </div> <!-- end col-->
+                                    </a> <!-- end col-->
 
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12" href="view_banners.php">
                                         <div class="card widget-flat">
                                             <div class="card-body">
                                                 <div class="float-end">
@@ -144,7 +144,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                 </p> -->
                                             </div> <!-- end card-body-->
                                         </div> <!-- end card-->
-                                    </div> <!-- end col-->
+                                    </a> <!-- end col-->
 
                         </div>
                         <!-- end row -->

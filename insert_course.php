@@ -8,21 +8,20 @@ $course_desc = $_POST['course_desc'];
 $course_cat = $_POST['course_cat'];
 
 // Uploading Photo file
-$docfile=$_POST['c_doc_data'];  
-if(!empty($docfile)){
-    // $data = $_POST["c_doc_data"];
-    // $doc_array_1 = explode(";", $data);
-    // $doc_array_2 = explode(",", $doc_array_1[1]);
-    // $data = base64_decode($doc_array_2[1]);
-    // $extension=end(explode(".", $_POST['c_doc_name']));
-    // $name=str_replace(".".$extension, "", $_POST['c_doc_name']);
-    // $doc_name = $name.rand().".".$extension;
-    // $location = "/var/www/html/Insurancedata/assets/documents/";
-    // $docName = $location.$doc_name;
-    // $uploads = file_put_contents($docName, $data); 
+$imgContent = "";
+if(!empty($_FILES["image"]["name"])){
+    $fileName = basename($_FILES["image"]["name"]); 
+    $fileType = pathinfo($fileName, PATHINFO_EXTENSION); 
+        
+    // Allow certain file formats 
+    $allowTypes = array('jpg','png','jpeg','gif'); 
+    if(in_array($fileType, $allowTypes)) { 
+        $image = $_FILES['image']['tmp_name']; 
+        $imgContent = addslashes(file_get_contents($image)); 
+    }
 }
 
-$dataArr = array('course_title' => $course_title, 'course_desc' => $course_desc, 'course_category' => $course_cat, 'course_photo' => $docfile );
+$dataArr = array('course_title' => $course_title, 'course_desc' => $course_desc, 'course_category' => $course_cat, 'course_photo' => $imgContent );
 $res = insert("courses", $dataArr, "no");
 
 if ($res) {

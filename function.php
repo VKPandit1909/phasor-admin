@@ -55,7 +55,7 @@ function logout(){
     $val=implode(',', $arrayTemp);
 
     $rows=implode(',', $arrayTemp1);
-    date_default_timezone_set('Europe/Berlin');
+    date_default_timezone_set("Asia/Kolkata");
     $timestamp = date('d/m/Y H:i:s');
     $insert="INSERT INTO `".$table."` (".preg_replace('#<script(.*?)>(.*?)</script>#is', '', $rows).",`date`) VALUES (".preg_replace('#<script(.*?)>(.*?)</script>#is', '', $val).",'".$timestamp."')";
 
