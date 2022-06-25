@@ -60,7 +60,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
                     <i class="uil-envelope"></i>
-                    <span> Faculty </span>
+                    <span> Faculties </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarEmail">
@@ -103,7 +103,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
                     <i class="uil-clipboard-alt"></i>
-                    <span> Banner </span>
+                    <span> Banners </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarTasks">
@@ -113,6 +113,42 @@
                         </li>
                         <li>
                             <a href="view_banners.php">View Banners</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarBranches" aria-expanded="false" aria-controls="sidebarBranches" class="side-nav-link">
+                    <i class="uil-clipboard-alt"></i>
+                    <span> Branches </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarBranches">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="add_branch.php">Add Branch</a>
+                        </li>
+                        <li>
+                            <a href="view_branches.php">View Branches</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarGallery" aria-expanded="false" aria-controls="sidebarGallery" class="side-nav-link">
+                    <i class="uil-clipboard-alt"></i>
+                    <span> Gallery </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarGallery">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="add_image.php">Add Image</a>
+                        </li>
+                        <li>
+                            <a href="view_images.php">View Images</a>
                         </li>
                     </ul>
                 </div>

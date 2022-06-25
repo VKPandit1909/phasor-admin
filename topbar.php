@@ -1,3 +1,10 @@
+<?php
+$username = $_SESSION['username'];
+$sql = "SELECT * FROM `admin_users` WHERE username='$username'";
+$query = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($query);
+?>
+
 <!-- Topbar Start -->
 <div class="navbar-custom">
     <ul class="list-unstyled topbar-menu float-end mb-0">
@@ -14,8 +21,8 @@
                     <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
                 </span>
                 <span>
-                    <span class="account-user-name">Soeng Souy</span>
-                    <span class="account-position">Founder</span>
+                    <span class="account-user-name"><?php echo $row['fullname']; ?></span>
+                    <span class="account-position"><?php echo $row['usertype']; ?></span>
                 </span>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
