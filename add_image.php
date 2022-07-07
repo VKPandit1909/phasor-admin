@@ -71,7 +71,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                 <div class="col-xl-6">
                                                     <div class="mb-3">
                                                         <label for="image" class="form-label">Image</label>
-                                                        <input type="file" name="image" accept="image/*" class="form-control" required />
+                                                        <input type="file" name="images[]" accept="image/*" class="form-control" multiple="multiple" required />
                                                     </div>
                                                 </div> 
                                                 <div class="col-xl-12">
