@@ -16,9 +16,9 @@ if(isset($_POST['submit'])){
     if($response==1){
     	$checktype=mysqli_query($conn,"SELECT * FROM admin WHERE username='".$_SESSION['username']."'");
         $rowtype=mysqli_fetch_assoc($checktype);
-        header("Location: /index.php");
+        header("Location: index.php");
     }else{
-        header("Location: /login.php?msg=Please try again !!!");  
+        header("Location: login.php?msg=Please try again !!!");  
 
     }    
     

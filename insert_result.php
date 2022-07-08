@@ -5,7 +5,7 @@ require_once("function.php");
 
 
 $result_cat = $_POST['course_cat'];
-echo $result_cat;
+// echo $result_cat;
 
 // Uploading Photo file
 $imgContent = "";
@@ -22,7 +22,7 @@ if(!empty($_FILES["image"]["name"])){
 }
 
  
-$dataArr = array(  'result_photo' => $imgContent,'result_cat' => $result_cat );
+$dataArr = array('result_photo' => $imgContent,'result_cat' => $result_cat );
 $res = insert("results", $dataArr, "no");
 
 if ($res) {

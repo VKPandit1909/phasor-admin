@@ -13,7 +13,7 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
 
     <head>
         <meta charset="utf-8">
-        <title>View Partners | Phasor Academy - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>View Results | Phasor Academy - Responsive Bootstrap 5 Admin Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="The Debug Arena" name="author">
@@ -55,18 +55,18 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Phasor Academy</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Partners</a></li>
-                                            <li class="breadcrumb-item active">View Partners</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Results</a></li>
+                                            <li class="breadcrumb-item active">View Results</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">View Partners</h4>
+                                    <h4 class="page-title">View Results</h4>
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
 
                         <?php
-                            $sql = "SELECT * FROM `partners`";
+                            $sql = "SELECT * FROM `results`";
                             $query = mysqli_query($conn,$sql);
                         ?>
 
@@ -80,8 +80,8 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                     <thead>
                                                         <tr>
                                                             <th>Id</th>
-                                                            <th>Partner Name</th>
-                                                            <th>Partner Image</th>
+                                                            <th>Category</th>
+                                                            <th>Image</th>
                                                             <th>Date</th>
                                                             <th>Action</th>
                                                         </tr>
@@ -93,16 +93,16 @@ if(isset($_SESSION['username']) && $_SESSION['username']!=''){
                                                                 <?php echo $row['id']; ?>
                                                             </td>
                                                             <td>
-                                                                <?php echo $row['partner_name']; ?>
+                                                                <?php echo $row['result_cat']; ?>
                                                             </td>
                                                             <td>
                                                                 <div class="col-auto">
-                                                                    <img data-dz-thumbnail="" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['partner_image']); ?>" class="avatar-lg rounded bg-light" alt="">
+                                                                    <img data-dz-thumbnail="" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['result_photo']); ?>" class="avatar-lg rounded bg-light" alt="">
                                                                 </div>
                                                             </td>
                                                             <td><?php echo $row['date']; ?></td>
                                                             <td>
-                                                                <a href="delete_partner.php?p_id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
+                                                                <a href="delete_result.php?r_id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
                                                             </td>
                                                         </tr>
                                                         <?php } ?>

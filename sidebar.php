@@ -40,7 +40,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
-                    <i class="uil-store"></i>
+                    <i class="uil-book"></i>
                     <span> Courses </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -58,7 +58,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
-                    <i class="uil-envelope"></i>
+                    <i class="uil-user-circle"></i>
                     <span> Faculties </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -101,7 +101,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
+                    <i class="uil-image"></i>
                     <span> Banners </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -119,7 +119,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBranches" aria-expanded="false" aria-controls="sidebarBranches" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
+                    <i class="uil-sitemap"></i>
                     <span> Branches </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -137,7 +137,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPartners" aria-expanded="false" aria-controls="sidebarPartners" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
+                    <i class="uil-users-alt"></i>
                     <span> Partners </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -155,7 +155,7 @@
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarGallery" aria-expanded="false" aria-controls="sidebarGallery" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
+                    <i class="uil-scenery"></i>
                     <span> Gallery </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -171,18 +171,18 @@
                 </div>
             </li>
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarGallery" aria-expanded="false" aria-controls="sidebarGallery" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
-                    <span> Result </span>
+                <a data-bs-toggle="collapse" href="#sidebarResults" aria-expanded="false" aria-controls="sidebarResults" class="side-nav-link">
+                    <i class="uil-comment-alt-verify"></i>
+                    <span> Results </span>
                     <span class="menu-arrow"></span>
                 </a>
-                <div class="collapse" id="sidebarGallery">
+                <div class="collapse" id="sidebarResults">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="add_result.php">Add Result</a>
                         </li>
                         <li>
-                            <a href="view_images.php">View Result</a>
+                            <a href="view_results.php">View Result</a>
                         </li>
                     </ul>
                 </div>
