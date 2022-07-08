@@ -137,6 +137,24 @@
             </li>
 
             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarPartners" aria-expanded="false" aria-controls="sidebarPartners" class="side-nav-link">
+                    <i class="uil-clipboard-alt"></i>
+                    <span> Partners </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarPartners">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="add_partner.php">Add Partner</a>
+                        </li>
+                        <li>
+                            <a href="view_partners.php">View Partners</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarGallery" aria-expanded="false" aria-controls="sidebarGallery" class="side-nav-link">
                     <i class="uil-clipboard-alt"></i>
                     <span> Gallery </span>
