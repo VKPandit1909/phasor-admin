@@ -1,7 +1,6 @@
-
 <!-- ========== Left Sidebar Start ========== -->
 <div class="leftside-menu">
-    
+
     <!-- LOGO -->
     <a href="index.php" class="logo text-center logo-light">
         <span class="logo-lg">
@@ -149,6 +148,23 @@
                         </li>
                         <li>
                             <a href="view_images.php">View Images</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarGallery" aria-expanded="false" aria-controls="sidebarGallery" class="side-nav-link">
+                    <i class="uil-clipboard-alt"></i>
+                    <span> Result </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarGallery">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="add_result.php">Add Result</a>
+                        </li>
+                        <li>
+                            <a href="view_images.php">View Result</a>
                         </li>
                     </ul>
                 </div>
