@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['username']) && $_SESSION['username']!=''){
     include "config.php";
 } else {
-    header("Location: /dashboard-admin/login.php?msg=Session expired. Please login again !!!");
+    header("Location: /login.php?msg=Session expired. Please login again !!!");
 }
 
 ?>
